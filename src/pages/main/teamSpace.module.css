@@ -1,0 +1,39 @@
+.teamSpaceContainer {
+    position: relative;
+    width: 430px;
+    height: 370px;
+    border: 2px solid #fbbf24;
+    border-radius: 20px;
+}
+
+.spaceCard {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 430px;
+    height: 370px;
+}
+
+.spaceTitle {
+    position: absolute;
+    top: 72px; /* 더 위로 이동 */
+    left: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.spaceLeader,
+.spaceDescription {
+    position: absolute;
+    left: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.spaceLeader {
+    top: 132px; /* 더 위로 이동 */
+}
+
+.spaceDescription {
+    top: 198px; /* 더 위로 이동 */
+}

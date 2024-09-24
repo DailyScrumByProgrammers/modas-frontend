@@ -1,0 +1,36 @@
+.queryContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    width: 276px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #fff;
+
+    position: absolute; /* 위치 조정 */
+    top: 50%; /* 원하는 위치로 조정 */
+    right: 20%; /* 오른쪽에서 20% */
+}
+
+.queryInput {
+    border: none;
+    outline: none;
+    flex: 1; /* 입력 필드가 남은 공간을 차지하도록 설정 */
+    font-size: 16px;
+    color: #94a3b8;
+    background-color: transparent; /* 투명 배경 */
+    padding-right: 10px; /* 아이콘과 간격 */
+}
+
+.queryButton {
+    background: none; /* 버튼의 배경을 제거 */
+    border: none;
+    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+    padding: 0;
+}
+
+.queryIcon {
+    width: 24px;
+    height: 24px;
+}

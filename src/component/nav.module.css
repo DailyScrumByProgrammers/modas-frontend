@@ -1,0 +1,47 @@
+/* Nav.module.css */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* 가로 100% 맞춤 */
+    padding: 12px 104px; /* 위아래 간격을 줄임 */
+    background-color: #fff;
+    box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
+}
+
+.logoContainer {
+    display: flex;
+    padding: 12px 40px;
+    background-color: #2d3648;
+    border-radius: 4px;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.authButtons {
+    display: flex;
+    gap: 16px;
+}
+
+.loginButton,
+.signupButton {
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginButton {
+    border: 2px solid #2d3648;
+    color: #2d3648;
+}
+
+.signupButton {
+    background-color: #2d3648;
+    color: #fff;
+}

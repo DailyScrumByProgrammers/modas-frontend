@@ -3,6 +3,7 @@
 
 import axios from 'axios';
 import React,{useState,useEffect} from 'react';
+import MainPage from "./pages/main/mainPage";
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
   });
 
   return (
-      <div className="App">
-      </div>
+  <>
+    <MainPage/>
+  </>
   );
 }
 

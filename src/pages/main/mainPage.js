@@ -1,0 +1,28 @@
+// MainPage.js
+import Nav from '../../component/nav';
+import Query from './query';
+import TeamSpace from './teamSpace';
+import styles from './mainPage.module.css';
+
+const MainPage = () => {
+    return (
+        <div className={styles.mainPage}>
+            <Nav />
+            <div className={styles.introSection}>
+                <div className={styles.introCircle}></div>
+                <div className={styles.introText}>
+                    모다스 소개<br/>(텍스트)
+                </div>
+            </div>
+            <Query />
+            <div className={styles.teamSpaces}>
+                <TeamSpace title="스페이스제목" leader="스페이스 리더이름" description="스페이스 설명" />
+                <TeamSpace title="스페이스제목" leader="스페이스 리더이름" description="스페이스 설명" />
+                <TeamSpace title="스페이스제목" leader="스페이스 리더이름" description="스페이스 설명" />
+                <TeamSpace title="스페이스제목" leader="스페이스 리더이름" description="스페이스 설명" />
+            </div>
+        </div>
+    );
+};
+
+export default MainPage;
