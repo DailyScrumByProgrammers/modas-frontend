@@ -1,4 +1,3 @@
-// MainPage.js
 import Nav from '../../component/nav';
 import Query from './query';
 import TeamSpace from './teamSpace';
@@ -9,7 +8,11 @@ const MainPage = () => {
         <div className={styles.mainPage}>
             <Nav />
             <div className={styles.introSection}>
-                <div className={styles.introCircle}></div>
+                <img
+                    className={styles.introCircle}
+                    src="modas-logo-2.png"
+                    alt="모다스 로고"
+                />
                 <div className={styles.introText}>
                     모다스 소개<br/>(텍스트)
                 </div>

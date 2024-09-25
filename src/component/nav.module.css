@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%; /* 가로 100% 맞춤 */
     padding: 12px 104px; /* 위아래 간격을 줄임 */
+    margin:0;
     background-color: #fff;
     box-sizing: border-box; /* 패딩 포함하여 크기 계산 */
 }
@@ -17,8 +18,8 @@
 }
 
 .logo {
-    font-size: 16px;
-    font-weight: bold;
+    width: 100px;
+    height: auto;
     color: #fff;
 }
 
@@ -29,7 +30,7 @@
 
 .loginButton,
 .signupButton {
-    padding: 12px 20px;
+    padding: 10px 18px;
     border-radius: 6px;
     font-size: 16px;
     font-weight: bold;

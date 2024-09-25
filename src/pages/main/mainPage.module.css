@@ -1,45 +1,41 @@
-/* MainPage.module.css */
 .mainPage {
     position: relative;
-    /*width: 1440px;*/
     height: 1671px;
     background-color: #fff;
 }
 
 .introSection {
     position: relative;
-    top: 98px;
-
     height: 577px;
-    background-color: #fbbf24;
+    background-color: #f1f5f9;
 }
+
 .introCircle {
     position: absolute;
-    top: 20%; /* 화면 높이의 10%에서 위치 */
+    top: 20%; /* 화면 높이의 20%에서 위치 */
     left: 20%; /* 화면 너비의 20%에서 위치 */
     width: 327px;
     height: 327px;
-    border: 1px solid #000;
     border-radius: 50%;
+    object-fit: contain; /* 이미지 비율 유지 */
 }
 
 .introText {
     position: absolute;
-    top: 50%; /* 화면 높이의 30%에서 위치 */
-    left: 60%; /* 화면 너비의 50%에서 위치 */
-    transform: translate(-50%, -50%); /* 가운데 정렬을 위해 -50% 변환 */
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
     width: 519px;
     font-size: 64px;
     font-weight: medium;
 }
-
 
 .teamSpaces {
     position: relative;
     top: 300px;
     display: flex;
     gap: 20px;
-    justify-content: center; /* 요소들을 가운데 정렬 */
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
 }
