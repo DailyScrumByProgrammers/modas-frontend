@@ -3,7 +3,7 @@ import styles from "./dashBoard.module.css";
 
 function Dashboard() {
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+    <div className={styles.dashBoard}>
       <Title />
       <Search />
       <CreateSpaceButton />
