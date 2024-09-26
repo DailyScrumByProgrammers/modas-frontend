@@ -1,7 +1,7 @@
 // Nav.js
-import styles from './nav.module.css';
+import styles from './header.module.css';
 
-const nav = () => {
+const header = () => {
     return (
         <nav className={styles.nav}>
 
@@ -15,4 +15,4 @@ const nav = () => {
     );
 };
 
-export default nav;
+export default header;

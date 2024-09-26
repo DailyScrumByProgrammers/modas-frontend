@@ -1,12 +1,12 @@
-import Nav from '../../component/nav';
-import Query from './query';
-import TeamSpace from './teamSpace';
+import Header from '../../component/header';
+import Query from '../../component/query';
+import TeamSpace from '../../component/teamSpace';
 import styles from './mainPage.module.css';
 
 const MainPage = () => {
     return (
         <div className={styles.mainPage}>
-            <Nav />
+            <Header />
             <div className={styles.introSection}>
                 <img
                     className={styles.introCircle}
