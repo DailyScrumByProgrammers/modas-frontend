@@ -2,7 +2,7 @@ import styles from './query.module.css';
 
 const Query = () => {
     return (
-        <div className={styles.queryContainer}>
+        <div className={styles.queryContainer} >
             <input
                 className={styles.queryInput}
                 type="text"

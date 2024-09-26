@@ -2,6 +2,7 @@
     position: relative;
     height: 1671px;
     background-color: #fff;
+    margin-bottom: 100px;
 }
 
 .introSection {
@@ -29,13 +30,84 @@
     font-size: 64px;
     font-weight: medium;
 }
-
 .teamSpaces {
-    position: relative;
-    top: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 컬럼으로 설정 */
+    gap: 20px; /* 요소 간 간격 */
+    justify-items: center; /* 가운데 정렬 */
+    margin-top: 200px; /* 팀스페이스를 더 아래로 내림 */
+}
+
+
+.pagination {
     display: flex;
-    gap: 20px;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+    padding:40px;
+}
+
+.pageButton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.pageButton:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+
+
+
+.queryWrapper {
+    position: absolute; /* 절대 위치 지정 */
+    top: 780px;
+    right:100px;
+
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px; /* 버튼들 간의 간격 */
+}
+
+.pageButton,
+.pageNumber {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FBBF24; /* 테두리 색상 */
+    background-color: #fff; /* 선택되지 않은 버튼 배경색 */
+    color: #000; /* 글자 색상 */
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.pageButton:hover,
+.pageNumber:hover {
+    background-color: #FBBF24; /* 호버 시 배경색 */
+    color: #fff; /* 호버 시 글자색 */
+}
+
+.pageButton:disabled,
+.pageNumber:disabled {
+    background-color: #fff; /* 비활성화 상태에서 흰색 배경 */
+    color: #000; /* 비활성화 상태에서 글자 색상 검정 */
+    border: 2px solid #FBBF24; /* 비활성화 상태에서도 테두리 유지 */
+    cursor: not-allowed;
+}
+
+.activePage {
+    background-color: #FBBF24 !important; /* 선택된 페이지의 배경색 */
+    color: #fff !important; /* 선택된 페이지의 글자 색상 */
+    border: none; /* 선택된 페이지는 테두리 제거 */
 }

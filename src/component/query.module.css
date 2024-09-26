@@ -3,14 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 12px;
-    width: 276px;
+    width: 350px;
     border: 1px solid #cbd5e1;
     border-radius: 6px;
     background-color: #fff;
 
-    position: absolute; /* 위치 조정 */
-    top: 50%; /* 원하는 위치로 조정 */
-    right: 20%; /* 오른쪽에서 20% */
+
 }
 
 .queryInput {
