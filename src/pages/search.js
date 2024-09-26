@@ -4,7 +4,7 @@ import styles from "./search.module.css";
 
 function Search() {
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+    <div className={styles.search}>
       <Title />
       <CreateSpaceButton />
       <SpaceContainer buttonText="참여하기" />
