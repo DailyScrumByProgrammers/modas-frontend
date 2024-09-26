@@ -1,0 +1,28 @@
+.title {
+  position: absolute;
+  left: 104px;
+  top: 153px;
+  font-family: "Noto Sans KR";
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.createSpaceBtn {
+  position: absolute;
+  left: 1232px;
+  top: 225px;
+  width: 154px;
+  height: 43px;
+  background-color: #fbbf24;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
