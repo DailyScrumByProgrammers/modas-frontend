@@ -1,0 +1,27 @@
+.teamSpaceContainer {
+    position: relative;
+    width: 430px; /* 고정된 가로 크기 */
+    height: 370px; /* 고정된 세로 크기 */
+    border: 2px solid #fbbf24;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px; /* 내부 요소와 경계 사이의 패딩 */
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 배치 */
+    justify-content: space-between; /* 요소 간의 여백을 자동으로 설정 */
+}
+
+.spaceTitle {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.spaceLeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.spaceDescription {
+    font-size: 30px;
+    font-weight: bold;
+}
