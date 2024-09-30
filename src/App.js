@@ -1,8 +1,7 @@
 //App.js
-
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import Dashboard from "./pages/dashBoard";
+import MainPage from "./pages/main/mainPage";
 
 function App() {
   const sendRequest = async () => {
@@ -16,9 +15,9 @@ function App() {
   });
 
   return (
-    <div className="App">
-      <Dashboard />;
-    </div>
+    <>
+      <MainPage />
+    </>
   );
 }
 
