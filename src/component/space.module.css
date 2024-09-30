@@ -48,11 +48,14 @@
 }
 
 .spaceContainer {
-  position: absolute;
+  position: relative; /* 절대 위치를 사용하지 않도록 변경 */
+  display: flex;
   top: 376px;
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
   box-sizing: border-box;
+  justify-content: space-between; /* 요소 간의 여백을 자동으로 설정 */
+  align-items: center; /*수직 중앙 정렬*/
 }

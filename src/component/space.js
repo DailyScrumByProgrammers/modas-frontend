@@ -1,6 +1,6 @@
 import styles from "./space.module.css";
 
-function Space({ index, buttonText }) {
+const Space = ({ index, buttonText }) => {
   return (
     <div className={styles.space}>
       {/* 각 Space의 내용 */}
@@ -11,7 +11,7 @@ function Space({ index, buttonText }) {
       <button className={styles.spaceBtn}>{buttonText}</button>
     </div>
   );
-}
+};
 
 function SpaceContainer({ buttonText }) {
   const spaces = Array.from({ length: 10 }); // 10개의 Space 생성
