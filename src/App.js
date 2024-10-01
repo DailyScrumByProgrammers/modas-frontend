@@ -11,6 +11,7 @@ import {
 import Dashboard from "./pages/dashBoard/dashBoardPage";
 import Search from "./pages/search/searchPage";
 import MainPage from "./pages/main/mainPage";
+import CreateSpacePage from "./pages/createSpace/createSpacePage";
 
 function App() {
   const sendRequest = async () => {
@@ -30,6 +31,8 @@ function App() {
         <Route path="/dash-board" element={<Dashboard />} />{" "}
         {/* 대시보드 페이지 */}
         <Route path="/search" element={<Search />} /> {/* 검색 페이지 */}
+        <Route path="/space" element={<CreateSpacePage />} />{" "}
+        {/* 검색 페이지 */}
       </Routes>
     </Router>
   );
