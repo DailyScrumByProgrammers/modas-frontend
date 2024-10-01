@@ -9,9 +9,7 @@ export const fetchTeamSpaces = (page, itemsPerPage) => {
         { title: "스페이스제목6", leader: "스페이스 리더6", description: "스페이스 설명6" },
         { title: "스페이스제목6", leader: "스페이스 리더6", description: "스페이스 설명6" },
 
-        { title: "스페이스제목6", leader: "스페이스 리더6", description: "스페이스 설명6" },
 
-        { title: "스페이스제목6", leader: "스페이스 리더6", description: "스페이스 설명6" },
 
 
     ];
