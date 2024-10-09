@@ -1,0 +1,21 @@
+.createSpaceName {
+  position: absolute;
+  color: #000;
+  font-size: 25px;
+  top: 161px;
+  left: 125px;
+  font-family: "Noto Sans KR";
+}
+
+.createSpaceNameInput {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 349px;
+  height: 65px;
+  border: 1px solid #000;
+  font-size: 16px;
+  color: #94a3b8;
+  border-radius: 20px;
+  background-color: transparent;
+}

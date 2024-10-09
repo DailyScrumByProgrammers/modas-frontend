@@ -1,0 +1,66 @@
+.createSpacePublic {
+  position: absolute;
+  top: 315px;
+  left: 613px;
+  color: #000;
+  font-size: 25px;
+  font-family: "Noto Sans KR";
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.toggleSwitch {
+  top: 10px;
+  position: absolute;
+  width: 309px;
+  height: 49px;
+  border-radius: 50px;
+  background-color: #fbbf24;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative; /* 자식 요소의 위치 기준 */
+}
+
+.switch {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.public {
+  position: absolute; /* 절대 위치 */
+  left: 25%; /* 퍼블릭 위치 조정 */
+  transform: translateX(-50%); /* 중앙 정렬 보정 */
+  color: black; /* 텍스트 색상 */
+  font-size: 25px;
+  font-family: "Noto Sans KR";
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.private {
+  position: absolute; /* 절대 위치 */
+  left: 75%; /* 퍼블릭 위치 조정 */
+  transform: translateX(-50%); /* 중앙 정렬 보정 */
+  color: black; /* 텍스트 색상 */
+  font-size: 25px;
+  font-family: "Noto Sans KR";
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.indicator {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 50%; /* 스위치의 반만 차지 */
+  height: 95%;
+  background-color: white; /* 스위치의 이동 부분 색상 */
+  border-radius: 50px; /* 둥근 모서리 */
+  transition: transform 0.3s; /* 이동 애니메이션 */
+}
+
+.indicator.active {
+  transform: translateX(98%); /* 활성화된 상태에서 오른쪽으로 이동 */
+}

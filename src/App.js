@@ -31,7 +31,7 @@ function App() {
         <Route path="/dash-board" element={<Dashboard />} />{" "}
         {/* 대시보드 페이지 */}
         <Route path="/search" element={<Search />} /> {/* 검색 페이지 */}
-        <Route path="/space" element={<CreateSpacePage />} />{" "}
+        <Route path="/space" element={<CreateSpacePage />} />
         {/* 검색 페이지 */}
       </Routes>
     </Router>

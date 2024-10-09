@@ -1,0 +1,53 @@
+.createSpaceScrum {
+  position: absolute;
+  color: #000;
+  font-size: 25px;
+  font-family: "Noto Sans KR";
+  top: 161px;
+  left: 613px;
+  margin-bottom: 10px; /* 아래쪽 여백 추가 */
+}
+
+.customSelect {
+  position: relative;
+  top: 5px;
+  width: 349px;
+  height: 65px;
+  border: 1px solid #000;
+  background: url(../../public/images/icon-chevron-down.png) no-repeat right
+    10px center;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.selected {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+.optionsContainer {
+  position: absolute;
+  top: calc(100% + 1px);
+  width: 90%;
+  left: 17px;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  margin-top: 643px;
+}
+
+.button {
+  display: flex;
+  width: 154px;
+  height: 43px;
+  background-color: #fbbf24;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+}
