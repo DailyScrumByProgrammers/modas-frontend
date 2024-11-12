@@ -28,7 +28,7 @@ const MainPage = () => {
 
     return (
         <div className={styles.mainPage}>
-            <Header/>
+            {/*<Header/>*/}
             <div className={styles.introSection}>
                 <img
                     className={styles.introCircle}
