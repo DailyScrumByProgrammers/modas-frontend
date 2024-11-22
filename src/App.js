@@ -1,21 +1,22 @@
 //App.js
 
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   useNavigate,
-} from "react-router-dom";
-import Dashboard from "./pages/dashBoard/dashBoardPage";
-import Search from "./pages/search/searchPage";
-import MainPage from "./pages/main/mainPage";
-import CreateSpacePage from "./pages/createSpace/createSpacePage";
+} from 'react-router-dom';
+import Dashboard from './pages/dashBoard/dashBoardPage';
+import Search from './pages/search/searchPage';
+import MainPage from './pages/main/mainPage';
+import CreateSpacePage from './pages/createSpace/createSpacePage';
+import UpdateSpacePage from './pages/updateSpace/updateSpacePage';
 
 function App() {
   const sendRequest = async () => {
-    const response = await axios.get("http://localhost:8000");
+    const response = await axios.get('http://localhost:8000');
     console.log(response);
     console.log(response.data);
   };
@@ -28,10 +29,11 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />} /> {/* 메인 페이지 */}
-        <Route path="/dash-board" element={<Dashboard />} />{" "}
+        <Route path="/dash-board" element={<Dashboard />} />{' '}
         {/* 대시보드 페이지 */}
         <Route path="/search" element={<Search />} /> {/* 검색 페이지 */}
         <Route path="/space" element={<CreateSpacePage />} />
+        <Route path="/space/update" element={<UpdateSpacePage />} />
         {/* 검색 페이지 */}
       </Routes>
     </Router>

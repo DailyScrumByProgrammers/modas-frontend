@@ -1,0 +1,43 @@
+/* 그리드 스타일: 2열로 유저 정보를 배치 */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열로 설정 */
+  gap: 20px; /* 각 열 간 간격 */
+}
+
+/* 각 그룹(헤더 + 유저 정보 두 명씩) */
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 닉네임, ID, 관리 3열 */
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #000; /* 헤더 아래에 구분선 추가 */
+}
+
+.userRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 닉네임, ID, 삭제 버튼 3열 */
+  padding: 5px;
+  justify-items: center; /* 항목들을 가로로 중앙 정렬 */
+  border-bottom: 1px solid #ccc; /* 유저 항목들 아래에 구분선 추가 */
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
