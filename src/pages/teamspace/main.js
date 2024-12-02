@@ -1,27 +1,30 @@
-import { useState } from 'react';
-import TeamTodo from '../../component/teamTodo'; // 정확한 파일 경로로 수정
-import styles from './main.module.css'; // CSS 모듈 import
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import TeamTodo from "../../component/teamTodo"; // 정확한 파일 경로로 수정
+import styles from "./main.module.css"; // CSS 모듈 import
 
 const Main = () => {
-    // 팀원 수를 state로 관리 (나중에 데이터베이스에서 가져올 예정)
-    const [teamMembers, setTeamMembers] = useState([
-        { name: "Team Member 1" },
-        { name: "Team Member 2" },
-        { name: "Team Member 3" },
-        { name: "Team Member 4" },
-        { name: "Team Member 4" },
-        { name: "Team Member 4" },
-        { name: "Team Member 4" },
-        { name: "Team Member 4" },
-        { name: "Team Member 4" },
+    const { id } = useParams(); // URL의 ":id" 값 가져오기
+    const [teamMembers, setTeamMembers] = useState([]);
 
-        { name: "Team Member 5" }
-    ]);
+    useEffect(() => {
+        const fetchTeamScrums = async () => {
+            try {
+                const response = await fetch(`/api/scrum/today/${id}`); // teamSpaceId로 API 호출
+                const data = await response.json();
+                setTeamMembers(data); // 상태에 팀원 데이터 업데이트
+            } catch (error) {
+                console.error("Failed to fetch team scrums:", error);
+            }
+        };
+
+        fetchTeamScrums();
+    }, [id]); // id가 변경될 때마다 다시 로드
 
     return (
         <div className={styles.container}>
             <div className={styles.headerText}>
-                Name님,<br/>데일리 스크럼 시간이에요
+                Name 님의 데일리 스크럼
             </div>
             <img
                 className={styles.calendarIcon}
@@ -30,15 +33,17 @@ const Main = () => {
                 src="/icon-calendar.png"
                 alt="calendar icon"
             />
-
-            {/* TeamTodo 컴포넌트 반복 렌더링 (팀원 수만큼 오른쪽에 배치) */}
             <div className={styles.teamTodoContainer}>
-                {teamMembers.map((member, index) => (
-                    <TeamTodo key={index} memberName={member.name} />
+                {teamMembers.map((member) => (
+                    <TeamTodo
+                        key={member.id}
+                        memberName={member.nickName}
+                        dailyScrumId={member.id}
+                    />
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Main;

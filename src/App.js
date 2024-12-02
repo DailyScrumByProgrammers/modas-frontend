@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React,{ useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/main/mainPage';
 import TeamSpace from './pages/teamspace/main';
@@ -21,7 +21,7 @@ function App() {
         <Nav /> {/* Nav 컴포넌트 포함 */}
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/teamspace" element={<TeamSpace />} /> {/* teamspace 라우트 추가 */}
+          <Route path="/teamspace/:id" element={<TeamSpace />} /> {/* teamspace 라우트 추가 */}
         </Routes>
       </Router>
   );
